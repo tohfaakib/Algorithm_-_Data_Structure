@@ -1,12 +1,9 @@
-from math import ceil
-
-
 def binary_src(list, item):
     low = 0
     high = len(list) - 1
 
     while low <= high:
-        mid = ceil((high + low) / 2)
+        mid = (high + low) // 2
         # print(mid)
         guess = list[mid]
         if guess == item:
